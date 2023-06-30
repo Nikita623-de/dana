@@ -21,26 +21,26 @@ const Header = () => {
           <nav className="nav">
             <ul className={`nav__list burger-menu-list ${menuOpen ? 'open' : ''}`}>
               <img src="./images/close.png" alt="" onClick={() => setMenuOpen(!menuOpen)} />
-              <li>
+              <li onClick={() => setMenuOpen(!menuOpen)}>
                 <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normalLink)}>
                   главная{' '}
                 </NavLink>
               </li>
-              <li>
+              <li onClick={() => setMenuOpen(!menuOpen)}>
                 <NavLink
                   to="/tire-wheels"
                   className={({ isActive }) => (isActive ? activeLink : normalLink)}>
                   шины и диски
                 </NavLink>
               </li>
-              <li>
+              <li onClick={() => setMenuOpen(!menuOpen)}>
                 <NavLink
                   to="/about"
                   className={({ isActive }) => (isActive ? activeLink : normalLink)}>
                   о нас
                 </NavLink>
               </li>
-              <li>
+              <li onClick={() => setMenuOpen(!menuOpen)}>
                 <NavLink
                   to="/contacts"
                   className={({ isActive }) => (isActive ? activeLink : normalLink)}>
